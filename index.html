@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
+  <!-- <script src="app.js" charset="utf-8"></script> -->
+  <title>Document</title>
+  <div class="transparent-header" >
+    <div class="header-container">
+      <div class="header">
+        <div class="logo">
+          <img class="logo-png" src="/assets/logo noise.png" alt="">
+        </div>
+        <div class="header-nav">
+          <ul>
+            <li><a class="test" href="#">Posts</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</head>
+
+<body>
+  
+  
+  <div class="main-content">
+    <div class="image-content">
+      <div class="thumbex">
+        <div class="thumbnail">
+          <img src="/assets/d9b7630960e59308d51a4ac2263f271b.jpg" alt="">
+        </div>
+      </div>
+      <div class="thumbex">
+        <div class="thumbnail">
+          <img src="/assets/000184570024.jpg" alt="">
+        </div>
+      </div>
+      <div class="thumbex">
+        <div class="thumbnail">
+          <img src="/assets/0f746fd341d78d75f61e03e0a7e70c32.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-content">
+    <img src="/assets/5e535a877371bbe27fa0b695_peep-76.png" alt="">
+  </div>
+
+<script>
+  $(document).ready(function() {
+
+$(window).scroll(function() {
+
+    var height = $('.main-content').height();
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= height + 50) {
+        $('.transparent-header').addClass('active-color-header');
+    } else {
+        $('.transparent-header').removeClass('active-color-header');
+    }
+
+});
+});
+</script>
+  
+</body>
+
+</html>

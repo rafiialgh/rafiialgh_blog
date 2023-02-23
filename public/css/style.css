@@ -99,7 +99,7 @@ body {
   width: 100%;
   padding: 60px 0 80px 0;
   /* padding: 20px; */
-  background-image: url(/assets/light-leaks-background-colorful-film-burn-black-background.jpg);
+  background-image: url(/public/assets/light-leaks-background-colorful-film-burn-black-background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   /* background: linear-gradient(to bottom, rgba(255,255,255,0) 90%,rgba(255,255,255,1)), url(assets/light-leaks-background-colorful-film-burn-black-background.jpg); */
@@ -164,9 +164,80 @@ body {
   opacity: 1;
 }
 
-
-
 .middle-content {
+  display: flex;
+  align-items: center;
   width: 100%;
+}
 
+.middle-content img {
+  width: 20%;
+  margin-left: 80px;
+}
+
+.middle-content-text {
+  margin: auto;
+}
+
+.middle-content-text h1 {
+  width: fit-content;
+}
+
+.middle-content-text p {
+  text-align: justify;
+  width: 55rem;
+  height: fit-content
+}
+
+.social-media {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin: auto;
+}
+
+.social-media-content {
+  display: flex;
+  width: 80rem;
+  height: 150px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.social-media-rectangle {
+  margin: auto;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #E9E9E9;
+  width: 76rem;
+  height: 70px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.social-media-rectangle-2 {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #E9E9E9;
+  width: 60rem;
+  height: 70px;
+  border-radius: 10px;
+  background-image: url(/public/assets/light-leaks-background-colorful-film-burn-black-background.jpg);
+  background-size: 400px;
+}
+
+.social-media-rectangle-2 h1{
+  position: relative;
+  color: white;
+  margin: auto;
+  font-weight: 600;
+}
+
+.instagram-logo-rectangle {
+  position: absolute;
+  width: 40px;
+  align-items: center;
+  left: 47%;
 }
